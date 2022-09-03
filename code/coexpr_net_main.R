@@ -327,7 +327,7 @@ write.csv(relations,filename, row.names = FALSE)
 filename <- paste("relations_",virus,"_",corr_method,".csv", sep="")
 write.csv(nprops,filename, row.names = FALSE)
 
-file_name <- paste (virus,".Rdata", sep = "", collapse = NULL)
-save(protdf, corsig, nprops, relations, g, final_clusters, ego,
+file_name <- paste (virus,"_results_",corr_method,".Rdata", sep = "")
+save(protdf, n_points, corsig, nprops, relations, g, final_clusters, ego,
      file = file_name)
   

@@ -16,12 +16,13 @@ options(warn=-1)
 set.seed(1)
 
 
-virus <- "HSV1" # one of "VACV", "EBV", "HSV1"
 
 load("allProteins.RData")
 load("allNets.RData")
 
-file_name <- paste (virus,".Rdata", sep = "", collapse = NULL)
+virus <- "HSV1" # one of "VACV", "EBV", "HSV1"
+corr_method <- "proportionality" # one of "pearson", "proportionality", "gaussian"
+file_name <- paste (virus,"_results_",corr_method,".Rdata", sep = "")
 load(file_name)
 
 ################################################################################
