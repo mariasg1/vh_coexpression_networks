@@ -324,7 +324,7 @@ write.table(ego@compareClusterResult, file = filename, sep = ";")
 
 filename <- paste("nprops_",virus,"_",corr_method,".csv", sep="")
 write.csv(relations,filename, row.names = FALSE)
-filename <- paste("relations_",virus,"_",corr_method,".csv", sep="")
+filename <- paste("interactions_",virus,"_",corr_method,".csv", sep="")
 write.csv(nprops,filename, row.names = FALSE)
 
 file_name <- paste (virus,"_results_",corr_method,".Rdata", sep = "")
