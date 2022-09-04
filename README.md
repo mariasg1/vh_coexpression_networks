@@ -19,10 +19,10 @@ The raw input data with protein relative abundances for the two viruses of study
 * Vaccinia ([data_VACV_edgeR_2reps.txt](data/data_VACV_edgeR_2reps.txt)) [2]
 
 The data folder contains also the results of the pipeline to create and analyze the networks:
-* [allNets.R](data/allNets.RData): R data file containing all the networks built for the two viruses, by means of Pearson Correlation Coefficient, Graphical Gaussian Models and Concordance Coefficient [3]. 
-* [allProteins.R](data/allProteins.RData): Processed input data. 
-* [HSV1_results_proportionality.R](HSV1_results_proportionality.RData): Created network object(with the Concordance Coefficient), nodes properties, interactions and other relevant data frames for the HSV1 virus. 
-* [VACV_results_proportionality.R](VACV_results_proportionality.RData): Created network object(with the Concordance Coefficient), nodes properties, interactions and other relevant data frames for the VACV virus.
+* [allNets.RData](data/allNets.RData): R data file containing all the networks built for the two viruses, by means of Pearson Correlation Coefficient, Graphical Gaussian Models and Concordance Coefficient [3]. 
+* [allProteins.RData](data/allProteins.RData): Processed input data. 
+* [HSV1_results_proportionality.RData](HSV1_results_proportionality.RData): Created network object(with the Concordance Coefficient), nodes properties, interactions and other relevant data frames for the HSV1 virus. 
+* [VACV_results_proportionality.RData](VACV_results_proportionality.RData): Created network object(with the Concordance Coefficient), nodes properties, interactions and other relevant data frames for the VACV virus.
 
 These files are created by the coexpr_net_main.R script and they are imported in coexpr_net_pictures.R.
 
@@ -32,7 +32,7 @@ Node properties and interactions have been saved as csv  files that can be impor
 
 The code folder contains the following R scripts:
 * [coexpr_net_functions.R](data/coexpr_net_functions.R): Helper functions. 
-* [coexpr_net_main.R](data/coexpr_net_main.R): This script processes the input data, creates and analyzes the Virus-Hos co-expression network. 
+* [coexpr_net_main.R](data/coexpr_net_main.R): This script processes the input data, creates and analyzes the Virus-Hos co-expression network, for the virus and method of choice. 
 * [coexpr_net_pictures.R](data/coexpr_net_pictures.R): This script produces several visualizations of network properties.
 
 Information about the R packages versions required to reproduce this work can be found in [sessionInfo.txt](sessionInfo.txt).
