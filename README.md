@@ -32,7 +32,22 @@ Node properties and interactions have been saved as csv  files that can be impor
 
 The code folder contains the following R scripts:
 * [coexpr_net_functions.R](data/coexpr_net_functions.R): Helper functions. 
-* [coexpr_net_main.R](data/coexpr_net_main.R): This script processes the input data, creates and analyzes the Virus-Hos co-expression network, for the virus and method of choice. 
+* [coexpr_net_main.R](data/coexpr_net_main.R): This script processes the input data, creates and analyzes the Virus-Host co-expression network, for the virus and method of choice. 
+    * Some of the variables that can be adjusted before running the script are:
+        * *virus*: one of "VACV", "HSV1"
+        * *corr_method*: one of "pearson", "proportionality"(for the Concordance Coefficient), "gaussian"
+        * *FDR_threshold*: to extract the significant differerentially expressed proteins 
+        * *LogFC_threshold*: to extract the significant differerentially expressed proteins
+        * *enrichment_threshold*: to filter functional annotation results
+        * *lambda*: Penalty parameter in Gaussian Graphical Model, larger lambda results 
+                        in faster calculation and a sparser graph
+
+    * The outputs produced are the following:
+        * Inline basic network properties and pictures
+        * Functional annotation of communities in a csv file
+        * Node properties and relations in csv format
+        * Network object exported in .R file
+
 * [coexpr_net_pictures.R](data/coexpr_net_pictures.R): This script produces several visualizations of network properties.
 
 Information about the R packages versions required to reproduce this work can be found in [sessionInfo.txt](sessionInfo.txt).
